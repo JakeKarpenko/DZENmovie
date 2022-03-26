@@ -1,10 +1,24 @@
 html{
-    background:url("./img/background.png")  no-repeat center center fixed ;
+    background:url("https://res.cloudinary.com/djf3bhsso/image/upload/v1648302421/MacBook_Pro_16__-_1_umel7f.png")  no-repeat center center fixed ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
+
+@media (max-width:500px){
+    html{
+        background:url("https://res.cloudinary.com/djf3bhsso/image/upload/v1648302418/iPhone_13_mini_-_2_lbzmgs.png")  no-repeat center center fixed ;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -50,7 +64,7 @@ li a{
 
 .welcome-page{
     margin: 60px auto 0 auto;
-    width: 900px;
+    width: 60%;
     text-align: center;
     background-color: rgba(77, 48, 78, 0.8);
     border-radius: 5px;
@@ -236,3 +250,33 @@ li a{
       font-size: 13px;
       padding: 13px 0 13px 0;
   }
+ 
+
+  @media (max-width:1000px) {
+    .welcome-page{
+        width: 90%;
+    }
+  }
+        /* MOBILE */
+  @media (max-width:700px){
+     .welcome-page .title{
+         font-size: 35px;
+     }
+     .welcome-page{
+        width: 100%;
+    }
+   .text-zone{
+       padding: 40px 0 40px 0 ;
+   }
+   .teg-border{
+       max-height: 250px;
+   }
+   .subtitle{
+       font-size: 13px;
+   }
+   .btn-tag {
+    font-size: 26px;
+    padding: 10px;
+    margin: 2px; 
+  }
+}
