@@ -1,0 +1,238 @@
+html{
+    background:url("./img/background.png")  no-repeat center center fixed ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+
+/* Navigation Bar */
+
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(77, 48, 78, 0.9) ;
+}
+
+li{
+    float: right;
+}
+li a{
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ 
+        /* LOGO */
+.dzen{
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+.mov{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+    /* WELCOME PAGE */
+
+.welcome-page{
+    margin: 60px auto 0 auto;
+    width: 900px;
+    text-align: center;
+    background-color: rgba(77, 48, 78, 0.8);
+    border-radius: 5px;
+}
+.title{
+    font-size: 60px;
+    font-weight: bold;
+    padding: 0px 0 14px 0;
+    opacity: 100%;
+}
+.subtitle{
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 90%;
+}
+
+    /* DROP DOWN  */
+.teg-border{
+    text-align: center;
+    margin: 30px 0 30px 0;
+    max-height: 230px;
+    overflow: scroll;
+    overflow-x: hidden;
+   /* overflow-y: scroll;
+   overflow-x: hidden; */
+}
+.teg-border p{
+    padding: 12px 0 12px 0;
+}
+
+/* SCROLL */
+.teg-border::-webkit-scrollbar{
+    width: 20px;
+}
+.teg-border::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+.teg-border::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+.teg-border::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+  }
+
+
+.text-zone{
+    padding: 80px;
+}
+
+.drop-down{
+    margin: 90px 0 90px 0;
+    background-color: rgba(174, 49, 78, 0.7);
+}
+
+/* BUTON TAG */
+
+.btn-tag {
+    border-radius: 4px;
+    background-color:rgba(174, 49, 49, 0.8);
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    padding: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    
+  }
+ 
+  .btn-tag{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btn-tag:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 18px;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn-tag:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  
+  .btn-tag:hover:after {
+    opacity: 1;
+    right: 0px;
+  }
+
+
+  /* MObile version */
+
+/* MOVIE PAGE */
+
+.movie-teg-page{
+    text-align: center;
+}
+
+.btn-tag-movie {
+    border-radius: 4px;
+    background-color:rgba(174, 49, 49, 0.9);
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    padding: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin:30px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    display: inline-block;
+    position: relative;
+  }
+
+  .movie-page{
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      background-color: rgba(77, 48, 78, 0.8);
+       border-radius: 5px;
+  }
+
+  .movie{
+      position: relative;
+      overflow: hidden;
+  }
+
+  .content{
+      position: absolute;
+      inset: 0;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .img-movie{
+      width: 300px;
+  }
+
+  .content, .img-movie{
+      transition: 200ms ease-in-out ;
+  }
+  .fade{
+    opacity: 0;
+}
+
+  .fade:hover{
+      opacity: 1;
+  }
+
+  .rating{
+      width: 130px;
+      text-align: left;
+  }
+  .rating .imdb{
+    opacity: 0.8;
+    font-size: 13px;
+}
+
+  .star{
+      font-size: 20px;
+      color: yellow;
+  
+  }
+  .rating .vote{
+      margin-left:50px ;
+      font-size: 18px;
+      font-weight: 500;
+  }
+
+  .overview{
+      font-size: 13px;
+      padding: 13px 0 13px 0;
+  }
