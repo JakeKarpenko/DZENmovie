@@ -27,7 +27,6 @@ const tegsData = [
      "Ex Machina",
      "'The Great Hack",
      "Snowden",
-     "Source Code",
      "App War",
      "BlackHat",
      "The matrix",

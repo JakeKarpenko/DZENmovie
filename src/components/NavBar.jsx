@@ -3,11 +3,12 @@ import Logo from "./Logo";
 
  function NavBar(){
      return(
-         <div className="nav-bar">
-          <ul>
+         <nav>
+
+          <ul className="nav-bar">
               <li style={{float: "left"}}> <Logo /> </li>
           </ul>
-         </div>
+         </nav>
      )
 }
 
