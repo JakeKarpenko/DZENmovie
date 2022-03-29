@@ -9,12 +9,12 @@ function Movie(props){
     const [isTrailerOpened, setIsTrailerOpend] = useState(false);
 
     useEffect( () => {
-        Axios.get("http://api.themoviedb.org/3/movie/" +props.id + "/videos?api_key=dc920c69a4620ff1f85e5c988531da53").then(
+        Axios.get("https://api.themoviedb.org/3/movie/" +props.id + "/videos?api_key=dc920c69a4620ff1f85e5c988531da53").then(
              (responce) =>{
                  setYouTubeKey(responce.data.results[0].key);
                  console.log(responce.data.results[0].key);
              })
-    },[props.index])    
+    },[])    
 
     return(
                   <div className="movie" key={props.index}> 
@@ -30,25 +30,20 @@ function Movie(props){
                         </div>
                         
                         <div className="play-btn" onClick={ () => setIsTrailerOpend(true) }>
-                            <PlayArrowIcon style={{fontSize:"80px"}} className="play-logo"/>
-                             <p>watch</p>
-                        </div> 
- 
-                                        
+                          <PlayArrowIcon onClick={ () => setIsTrailerOpend(true) } style={{fontSize:"80px"}} className="play-logo"/>
+                             <p>Trailer</p>
+                        </div>                                         
                     </div>
 
-                    {isTrailerOpened &&  <div onClick={ () => setIsTrailerOpend(false) } className="trailer-block">
-
-                    <div className="logo-movie">
-                    <Logo />
-                    </div>
-                           <iframe className="trailer-video" id="ytplayer" width="560" height="315" 
-                           src={"https://www.youtube.com/embed/" + youTubeKey +"?autoplay=1&color=white"}
-                           frameborder="0" allowfullscreen ></iframe>
-                          
-                    </div> }
-                   
-
+                
+                        {isTrailerOpened &&
+                        <div onClick={ () => setIsTrailerOpend(false) } className="trailer-block">
+                             <div className="logo-movie">
+                            <Logo/>
+                             </div>
+                             <iframe className="trailer-video" width="560" height="315" src={"https://www.youtube.com/embed/" + youTubeKey + "?autoplay=1"}  title="YouTube video player"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                         }
                     </div>
     )
 }

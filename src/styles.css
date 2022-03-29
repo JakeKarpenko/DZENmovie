@@ -229,10 +229,12 @@ li a{
   }
   .fade{
     opacity: 0;
+   
 }
 
   .fade:hover{
       opacity: 1;
+  
   }
 
   .rating{
@@ -261,9 +263,11 @@ li a{
   }
   .play-logo{
       font-size: 80px;
-      margin-top: 40px;
   }
-
+  .play-btn{
+      width: 100px;
+      margin: auto;
+  }
 
 
   .scroll-overview{
@@ -296,10 +300,6 @@ li a{
     background-color: #a8bbbf;
   }
 
-
- .play-logo{
-    margin-top: 35px;
-}
 
 /* TRAIIER */
 
@@ -335,6 +335,9 @@ li a{
   }
         /* MOBILE */
   @media (max-width:700px){
+      .movie-page{
+          width: 70%;
+      }
      .welcome-page .title{
          font-size: 35px;
      }
@@ -356,7 +359,7 @@ li a{
     margin: 2px; 
   }
   .img-movie{
-      width: 90%;
+      width: 100%;
   }
   .trailer-video{
     width: 100%;
