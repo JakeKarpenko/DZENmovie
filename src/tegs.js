@@ -8,9 +8,6 @@ const tegs = [
  "In the mood of love",
 ] 
 
-
- const genres = [{"id":28,"name":"Action"}, {"id":12,"name":"Adventure"}, {"id":16,"name":"Animation"}, {"id":35,"name":"Comedy"}, {"id":80,"name":"Crime"}, {"id":99,"name":"Documentary"}, {"id":18,"name":"Drama"}, {"id":10751,"name":"Family"}, {"id":14,"name":"Fantasy"}, {"id":36,"name":"History"}, {"id":27,"name":"Horror"}, {"id":10402,"name":"Music"}, {"id":9648,"name":"Mystery"}, {"id":10749,"name":"Romance"}, {"id":878,"name":"Science Fiction"}, {"id":10770,"name":"TV Movie"}, {"id":53,"name":"Thriller"}, {"id":10752,"name":"War"}, {"id":37,"name":"Western"}]
-
 const tegsData = [ 
     [
     "Jobs",
@@ -30,7 +27,9 @@ const tegsData = [
      "App War",
      "BlackHat",
      "The matrix",
-     "The Girl With The Dragon Tattoo"
+     "The Girl With The Dragon Tattoo",
+     "Tron",
+     "Her"
     ], 
 
     [
@@ -47,25 +46,52 @@ const tegsData = [
     ],
 
     [
-        "Wild",
-        "Eat, Pray, Love",
+    
+        "The Pursuit of Happyness",
         "How To Be Single",
-        "Bohemian Rhapsody"
+        "Eat, Pray, Love",
+        "Bohemian Rhapsody",
+        "Wild",
+        "Rocky",
+        "Seven Pounds",
+        "THE WOODSMAN",
+        "My Happy Family",
+        "Under the Tuscan Sun"
     ],
 
     [
+        "We’re the Millers",
         "Meet the Parents",
-        "Eurotrip",
         "The 40 Year Old Virgin",
         "Superbad",
-        "Plus One",
-        "Blockers"
+        "Blockers",
+        "Due Date",
+        "Ted",
+        "The Hangover",
+        "Wedding Crashers",
+        "Bridesmaids",
+        "The Dictator",
+        "American Pie",
+        "Jump Street",
+        "Horrible Bosses",
+        "Tropic Thunder",
+        "Hot Fuzz",
+        "Zombieland"
     ],
 
     [
-        "Ford v. Ferrari",
+        "Clifford the Big Red Dog",
+        " Sonic the Hedgehog 2",
         "Harry Potter and the Sorcerer's Stone",
-        " Argo",
+        "Aladdin",
+        "Charlie and the Chocolate Factory",
+        "Ocean's Eleven",
+        "Argo",
+        "Chef",
+        "Good Will Hunting",
+        "Skyfall",
+        "Hook",
+        "Ford v. Ferrari",
         "Hitch",
         "The Hunger Games",
         "The Martian"
@@ -77,10 +103,24 @@ const tegsData = [
         "Forrest Gump",
         "The Blind Side",
         "The Wolf of Wall Street",
-        "The founder"
+        "The founder",
+       "JUST MERCY",
+        "The Pursuit of Happyness",
+        "Coach Carter",
+        "The Shawshank of Redemption "
+    
     ],
 
     [
+        "La La Land",
+        " Pride & Prejudice",
+        "500 Days of Summer",
+        " The Notebook",
+        "Before Sunset",
+        "Bridget Jones's Diary",
+        "Crazy Rich Asians",
+        "A Star is Born",
+        "Definitely, Maybe",
         "Happiest Season",
         "Love Actually",
         "Scott Pilgrim vs. The World",
@@ -93,4 +133,4 @@ const tegsData = [
 ]
 
 export default tegs
-export {tegsData, genres}
+export {tegsData}

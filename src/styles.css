@@ -34,7 +34,7 @@ html{
 }
 
 .category a{
-    color: rgba(174, 49, 49,1);;
+    color: rgba(174, 49, 49,1);
 padding-top: 26px;
 padding-bottom:26px;
 background-color:white
@@ -43,7 +43,7 @@ background-color:white
 ul{
     list-style-type: none;
     overflow: hidden;
-    background-color: rgba(77, 48, 78, 0.9) ;
+    background-color: rgba(77, 48, 78, 0.9);
 }
 
 li{
@@ -54,6 +54,7 @@ li a{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px;
+
 }
 
 

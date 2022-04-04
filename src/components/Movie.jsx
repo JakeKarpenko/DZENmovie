@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useLayoutEffect } from "react";
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import Axios from "axios";
 import Logo from "./Logo"
@@ -8,7 +8,7 @@ function Movie(props){
     const [youTubeKey, setYouTubeKey] = useState("");
     const [isTrailerOpened, setIsTrailerOpend] = useState(false);
 
-    useEffect( () => {
+    useLayoutEffect( () => {
         Axios.get("https://api.themoviedb.org/3/movie/" +props.id + "/videos?api_key=dc920c69a4620ff1f85e5c988531da53").then(
              (responce) =>{
                  setYouTubeKey(responce.data.results[0].key);
